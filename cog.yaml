@@ -5,6 +5,7 @@ build:
     - "libglib2.0-0"
   python_version: "3.10.4"
   python_packages:
+    - "jsonmerge==1.9.2"
     - "torch==2.0.1"
     - "torchvision==0.15.2"
     - "xformers==0.0.22"
@@ -21,6 +22,5 @@ build:
     - git config --global --add safe.directory /src/extensions/sd-webui-controlnet
     - git config --global --add safe.directory /src/extensions/multidiffusion-upscaler-for-automatic1111
     - git clone https://github.com/philz1337x/stable-diffusion-webui-cog-init /stable-diffusion-webui
-    - pip install --upgrade setuptools
     - python /stable-diffusion-webui/init_env.py --skip-torch-cuda-test
 predict: "predict.py:Predictor"
