@@ -24,7 +24,7 @@ jobs:
         uses: replicate/setup-cog@v2
         with:
           token: ${{ secrets.REPLICATE_API_TOKEN }}
-
+      - run: pip install requests
       - name: Download model weights
         run: python download_weights.py --skip-torch-cuda-test
       - run: cog build -t my-model
@@ -39,6 +39,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+      - run: pip install requests
       - name: Setup Cog
         uses: replicate/setup-cog@v2
         with:
