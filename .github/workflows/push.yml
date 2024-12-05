@@ -12,7 +12,7 @@ on:
 jobs:
   deploy:
     name: Deploy to Replicate and ECR
-    runs-on: runs-on=${{ github.run_id }}-build/runner=model-deployment
+    runs-on: runs-on=${{ github.run_id }}-build/runner=4cpu-linux-x64/disk=large
     steps:
       - name: Checkout
         uses: actions/checkout@v4
