@@ -1,0 +1,7 @@
+runners:
+  model-deployment:
+    cpu: [4, 8]
+    family: ["c8g", "c7g","c6g", "m8g", "m7g"]
+    image: ubuntu24-full-amd64
+    spot: price-capacity-optimized
+    disk: large
