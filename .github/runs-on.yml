@@ -1,7 +1,19 @@
+images:
+  dlami-x64:
+    platform: "linux"
+    arch: "x64"
+    owner: "898082745236" # AWS
+    name: "Deep Learning Base OSS Nvidia Driver GPU AMI (Ubuntu 22.04)*"
+
+
 runners:
   model-deployment:
     cpu: [4, 8]
     family: ["c8g", "c7g","c6g", "m8g", "m7g"]
     image: ubuntu24-full-amd64
     spot: price-capacity-optimized
+    disk: large
+  gpu:
+    family: ["g4dn.xlarge"]
+    image: dlami-x64
     disk: large
