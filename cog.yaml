@@ -15,6 +15,7 @@ build:
     - "realesrgan==0.3.0"
     - "gdown==5.1.0"
     - "mediapipe==0.10.14"
+    - "setuptools==67.7.2"
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/latest/download/pget_$(uname -s)_$(uname -m)"
     - chmod +x /usr/local/bin/pget

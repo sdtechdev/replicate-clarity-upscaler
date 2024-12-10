@@ -1,7 +1,7 @@
 GitPython
 Pillow
 accelerate
-
+setuptools==67.7.2
 basicsr
 blendmodes
 clean-fid
