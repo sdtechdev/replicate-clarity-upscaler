@@ -5,7 +5,7 @@ build:
     - "libglib2.0-0"
   python_version: "3.10.4"
   python_packages:
-    - "jsonmerge==1.9.2"
+    # - "jsonmerge==1.9.2"
     - "torch==2.0.1"
     - "torchvision==0.15.2"
     - "xformers==0.0.22"
@@ -15,7 +15,7 @@ build:
     - "realesrgan==0.3.0"
     - "gdown==5.1.0"
     - "mediapipe==0.10.14"
-    - "setuptools==67.7.2"
+    # - "setuptools==67.7.2"
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/latest/download/pget_$(uname -s)_$(uname -m)"
     - chmod +x /usr/local/bin/pget
